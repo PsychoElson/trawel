@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путешествия по миру</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Навигационное меню */
+        nav {
+            background: #333;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        nav ul li a:hover {
+            color: #ff6f61;
+        }
+        header {
+            background: url('https://via.placeholder.com/1500x600') no-repeat center center/cover;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.5em;
+        }
+        .btn {
+            background: #ff6f61;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .destinations {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .destination-card {
+            width: 30%;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .destination-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .benefits {
+            background: #f4f4f4;
+        }
+        .benefits ul {
+            list-style: none;
+            padding: 0;
+        }
+        .benefits ul li {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .testimonials {
+            background: #ff6f61;
+            color: white;
+        }
+        .testimonial-card {
+            background: white;
+            color: black;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Навигационное меню -->
+    <nav>
+        <ul>
+            <li><a href="#destinations">Популярные направления</a></li>
+            <li><a href="#testimonials">Отзывы наших клиентов</a></li>
+            <li><a href="#benefits">Почему стоит путешествовать?</a></li>
+        </ul>
+    </nav>
+
+    <!-- Заголовок -->
+    <header>
+        <h1>Путешествия по миру</h1>
+        <p>Откройте для себя новые горизонты</p>
+        <a href="#destinations" class="btn">Узнать больше</a>
+    </header>
+
+    <!-- Популярные направления -->
+    <section id="destinations">
+        <h2>Популярные направления</h2>
+        <div class="destinations">
+            <div class="destination-card">
+                <img src="paris.jpg" alt="Париж">
+                <h3>Париж</h3>
+                <p>Город любви и романтики</p>
+            </div>
+            <div class="destination-card">
+                <img src="tokio.jpg" alt="Токио">
+                <h3>Токио</h3>
+                <p>Современность и традиции</p>
+            </div>
+            <div class="destination-card">
+                <img src="new-york.jpg" alt="Нью-Йорк">
+                <h3>Нью-Йорк</h3>
+                <p>Город, который никогда не спит</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества путешествий -->
+    <section id="benefits" class="benefits">
+        <h2>Почему стоит путешествовать?</h2>
+        <ul>
+            <li>Расширение кругозора</li>
+            <li>Новые знакомства</li>
+            <li>Отдых от рутины</li>
+            <li>Культурное обогащение</li>
+        </ul>
+    </section>
+
+    <!-- Отзывы -->
+    <section id="testimonials" class="testimonials">
+        <h2>Отзывы наших клиентов</h2>
+        <div class="testimonial-card">
+            <p>"Путешествие в Париж было незабываемым! Спасибо за отличную организацию!"</p>
+            <p>- Анна</p>
+        </div>
+        <div class="testimonial-card">
+            <p>"Токио поразил своей красотой и технологиями. Обязательно вернусь!"</p>
+            <p>- Иван</p>
+        </div>
+        <div class="testimonial-card">
+            <p>"Нью-Йорк — это город мечты! Я в восторге от небоскребов и атмосферы."</p>
+            <p>- Дмитрий</p>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <footer>
+        <h2>Свяжитесь с нами</h2>
+        <p>Email: travel@world.com</p>
+        <p>Телефон: +7 (800) 555-35-35</p>
+    </footer>
+
+</body>
+</html>
